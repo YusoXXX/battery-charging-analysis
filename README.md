@@ -27,11 +27,10 @@ The project is designed as a research-oriented codebase and will be expanded wit
 flowchart LR
     A[Battery Test Data NGU201 / DAS60] --> B[CSV Data Parsing]
     B --> C[Charge Alignment]
-    C --> D[Delta t(Q) Analysis]
+    C --> D[Delta tQ Analysis]
     D --> E[Charging Behaviour Comparison]
     E --> F[Visualization]
 ```
-
 ---
 
 # Methodological Background
