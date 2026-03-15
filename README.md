@@ -137,6 +137,18 @@ results/figures/
 
 ---
 
+## Research Notice
+
+This repository contains analysis scripts and workflow developed as part of ongoing research on lithium-ion battery charging behaviour.
+
+The repository is intended to provide transparency of the analysis methodology and reproducibility of the computational workflow.
+
+Experimental datasets and key research results are intentionally not included in the public repository in order to protect ongoing research work.
+
+If you intend to reuse the analysis workflow or code in academic publications, please cite this repository and contact the author when appropriate.
+
+---
+
 ## Data Availability
 
 Example experimental results are not included in the public repository in order to protect ongoing research work.
@@ -154,6 +166,20 @@ Future extensions may include:
 - automated CSV parsing improvements
 - additional charging comparison metrics
 - extended parameter extraction tools
+
+---
+
+## Citation
+
+If you use this code or analysis workflow in academic work, please cite:
+
+```
+Lu, J.
+Battery Charging Analysis
+GitHub repository
+```
+
+A DOI may be provided in the future when the repository is archived for publication.
 
 ---
 
