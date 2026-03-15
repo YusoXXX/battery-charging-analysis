@@ -25,10 +25,10 @@ The project is designed as a research-oriented codebase and will be expanded wit
 
 ```mermaid
 flowchart LR
-    A[Battery Test Data NGU201 / DAS60] --> B[CSV Data Parsing]
+    A[Battery Test Data] --> B[CSV Parsing]
     B --> C[Charge Alignment]
-    C --> D[Delta tQ Analysis]
-    D --> E[Charging Behaviour Comparison]
+    C --> D[Delta tQ Method]
+    D --> E[Charging Comparison]
     E --> F[Visualization]
 ```
 ---
