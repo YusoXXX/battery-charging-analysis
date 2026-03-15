@@ -77,18 +77,18 @@ battery-charging-analysis/
 
 ---
 
-# Scripts
-
 ## plot_delta_tq.py
 
-Generates Δt(Q) curves for comparing different battery charging conditions.
+Research-oriented analysis script for Δt(Q)-based comparison of lithium-ion charging conditions.
 
 Main functionality:
 
-- load CSV charging data
-- align charging curves
-- compute Δt(Q)
-- generate comparison plots
+- read NGU201 CSV files
+- support manual file selection or automatic CSV scanning
+- automatically identify the DC-only reference condition
+- compute Δt(Q) relative to the reference condition
+- calculate AΔt up to SOC = 80%
+- generate comparison plots and bar charts
 
 ---
 
@@ -132,12 +132,46 @@ pip install -r requirements.txt
 
 # Usage
 
-Example usage:
+The script supports two input modes:
+
+## 1. Automatic scan mode
+
+Place the CSV files in the same directory as the script and leave:
+
+```python
+manual_files = []
+```
+
+Then run:
 
 ```bash
 python scripts/plot_delta_tq.py
 ```
 
+## 2. Manual file selection mode
+
+Specify the filenames in:
+
+```python
+manual_files = [
+    "0.3C dc.csv",
+    "0.3+0.7 0.1tau.csv",
+    "0.3+0.7 1tau.csv",
+    "0.3+0.7 10 tau.csv"
+]
+```
+
+Then run:
+
+```bash
+python scripts/plot_delta_tq.py
+```
+
+Generated figures will be saved to:
+
+```text
+results/figures/
+```
 ---
 
 # Example Result
