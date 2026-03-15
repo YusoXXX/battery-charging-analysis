@@ -6,17 +6,17 @@ This repository provides scripts and documentation for analysing battery chargin
 
 ---
 
-# Research Goal
+## Research Goal
 
 The goal of this project is to analyse lithium-ion battery charging behaviour using **state-equivalent criteria** rather than simple voltage-based comparisons.
 
 The analysis focuses on the **Δt(Q) method**, which compares the time required to reach the same transferred charge under different charging conditions.
 
-This approach allows a consistent comparison of charging processes when analysing experimental battery data.
+This approach enables a consistent comparison of charging behaviour in experimental battery studies.
 
 ---
 
-# Analysis Workflow
+## Analysis Workflow
 
 ```mermaid
 flowchart LR
@@ -29,7 +29,7 @@ flowchart LR
 
 ---
 
-# Methodological Background
+## Methodological Background
 
 Traditional charging comparisons often rely on voltage thresholds such as the time required to reach a specific voltage.
 
@@ -37,9 +37,7 @@ In this project, charging behaviour is analysed using **state-equivalent charge 
 
 The Δt(Q) method compares charging curves by analysing the time difference required to reach identical transferred charge values.
 
-This provides a more robust basis for comparing charging behaviour under different charging conditions.
-
-Additional methodological notes can be found in:
+More details can be found in:
 
 ```
 docs/method_notes.md
@@ -47,7 +45,7 @@ docs/method_notes.md
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```
 battery-charging-analysis/
@@ -74,7 +72,7 @@ battery-charging-analysis/
 
 ---
 
-# Script
+## Script
 
 ### `plot_delta_tq.py`
 
@@ -86,11 +84,11 @@ Main functionality:
 - automatically identify DC reference condition
 - compute Δt(Q) curves
 - compute AΔt up to SOC = 80%
-- generate comparison plots and bar charts
+- generate comparison plots
 
 ---
 
-# Installation
+## Installation
 
 Install required Python packages:
 
@@ -100,17 +98,17 @@ pip install -r requirements.txt
 
 ---
 
-# Usage
+## Usage
 
 Place CSV files in the same directory as the script or specify them manually.
 
-Run the script:
+Run:
 
 ```bash
 python scripts/plot_delta_tq.py
 ```
 
-Generated figures will be saved to:
+Generated figures will be saved in:
 
 ```
 results/figures/
@@ -118,15 +116,15 @@ results/figures/
 
 ---
 
-# Data Availability
+## Data Availability
 
-Example experimental data and result figures are not included in this public repository in order to protect ongoing research results.
+Example experimental results are not included in the public repository in order to protect ongoing research work.
 
-The repository provides the analysis workflow and scripts required to reproduce the analysis once appropriate data is available.
+Experimental datasets will be made available upon publication of the related research work.
 
 ---
 
-# Status
+## Status
 
 This repository is under active development and currently focuses on lithium-ion battery charging experiment analysis.
 
@@ -138,7 +136,7 @@ Future extensions may include:
 
 ---
 
-# Author
+## Author
 
 Jiaxing Lu  
 Research on lithium-ion battery charging behaviour and experimental data analysis.
