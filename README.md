@@ -31,6 +31,7 @@ flowchart LR
     D --> E[Charging Comparison]
     E --> F[Visualization]
 ```
+Δt(Q) = time difference required to reach equal transferred charge
 ---
 
 # Methodological Background
