@@ -41,14 +41,23 @@ python scripts/plot_delta_tq.py
 
 ## Project structure
 
-```
+```text
 battery-charging-analysis/
+├── .gitignore
+├── LICENSE
 ├── README.md
 ├── requirements.txt
-└── scripts/
-    └── plot_delta_tq.py
+├── scripts/
+│   └── plot_delta_tq.py
+├── docs/
+│   └── method_notes.md
+├── data/
+│   ├── raw/
+│   └── processed/
+└── results/
+    ├── figures/
+    └── tables/
 ```
-
 ## Notes
 
 Raw experimental data are not included in this repository.  
