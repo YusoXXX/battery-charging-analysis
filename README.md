@@ -174,7 +174,7 @@ Future extensions may include:
 If you use this code or analysis workflow in academic work, please cite:
 
 ```
-Lu, J.
+Jiaxing, Lu.
 Battery Charging Analysis
 GitHub repository
 ```
