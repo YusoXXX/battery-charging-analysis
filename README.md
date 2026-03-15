@@ -22,7 +22,7 @@ The project is designed as a research-oriented codebase and will be expanded wit
 ---
 
 # Analysis Workflow
-
+The analysis workflow implemented in this repository is illustrated below.
 ```mermaid
 flowchart LR
     A[Battery Test Data] --> B[CSV Parsing]
