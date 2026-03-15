@@ -21,6 +21,20 @@ This approach enables a consistent comparison of charging behaviour in experimen
 
 ---
 
+## Concept
+
+The core idea of this analysis is to compare charging behaviour using **state-equivalent charge criteria**.
+
+Instead of comparing charging curves by voltage thresholds, charging processes are aligned by transferred charge **Q(t)** and compared using **Δt(Q)**.
+
+```mermaid
+flowchart LR
+    A[Charging Voltage / Current] --> B[Charge Integration]
+    B --> C[Q(t) Representation]
+    C --> D[Delta tQ Comparison]
+    D --> E[Charging Behaviour Evaluation]
+```
+
 ## Analysis Workflow
 
 ```mermaid
