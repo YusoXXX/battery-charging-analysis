@@ -29,8 +29,8 @@ Instead of comparing charging curves by voltage thresholds, charging processes a
 
 ```mermaid
 flowchart LR
-    A[Charging Voltage / Current] --> B[Charge Integration]
-    B --> C[Q(t) Representation]
+    A[Charging Voltage and Current] --> B[Charge Integration]
+    B --> C[Charge Representation Q]
     C --> D[Delta tQ Comparison]
     D --> E[Charging Behaviour Evaluation]
 ```
