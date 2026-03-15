@@ -11,6 +11,22 @@ This repository provides scripts and documentation for analysing battery chargin
 
 ---
 
+## Overview
+
+This project provides a structured analysis workflow for lithium-ion battery charging experiments.
+
+The repository focuses on analysing charging behaviour using the **Δt(Q)** method, which compares the time required to reach the same transferred charge under different charging conditions.
+
+The repository contains:
+
+- research-oriented analysis scripts
+- methodological documentation
+- a reproducible data analysis workflow
+
+The project is intended as a research prototype supporting experimental battery analysis.
+
+---
+
 ## Research Goal
 
 The goal of this project is to analyse lithium-ion battery charging behaviour using **state-equivalent criteria** rather than simple voltage-based comparisons.
@@ -34,8 +50,8 @@ flowchart LR
     C --> D[Delta tQ Comparison]
     D --> E[Charging Behaviour Evaluation]
 ```
----
 
+---
 
 ## Analysis Workflow
 
@@ -109,9 +125,35 @@ Main functionality:
 
 ---
 
+## Requirements
+
+Python environment recommended:
+
+```
+Python ≥ 3.9
+numpy
+pandas
+matplotlib
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## Installation
 
-Install required Python packages:
+Clone the repository:
+
+```bash
+git clone https://github.com/YusoXXX/battery-charging-analysis.git
+cd battery-charging-analysis
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -174,12 +216,31 @@ Future extensions may include:
 If you use this code or analysis workflow in academic work, please cite:
 
 ```
-Jiaxing, Lu.
-Battery Charging Analysis
-GitHub repository
+Lu, Jiaxing.
+Battery Charging Analysis.
+GitHub repository.
+```
+
+BibTeX example:
+
+```
+@software{lu_battery_charging_analysis,
+  author = {Lu, Jiaxing},
+  title = {Battery Charging Analysis},
+  year = {2026},
+  url = {https://github.com/YusoXXX/battery-charging-analysis}
+}
 ```
 
 A DOI may be provided in the future when the repository is archived for publication.
+
+---
+
+## License
+
+This project is released under the MIT License.
+
+See the `LICENSE` file for details.
 
 ---
 
