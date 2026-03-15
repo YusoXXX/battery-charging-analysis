@@ -1,5 +1,10 @@
 # Battery Charging Analysis
 
+![Python](https://img.shields.io/badge/python-3.x-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-research--prototype-orange)
+![Field](https://img.shields.io/badge/field-battery%20analysis-blue)
+
 Python tools for analysing lithium-ion battery charging experiments using the **Δt(Q)** methodology.
 
 This repository provides scripts and documentation for analysing battery charging behaviour using experimental data exported from **Rohde & Schwarz NGU201** battery testing systems.
