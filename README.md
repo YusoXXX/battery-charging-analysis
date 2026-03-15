@@ -1,23 +1,18 @@
 # Battery Charging Analysis
 
-Python tools for analysing lithium-ion battery charging experiments.
+Python tools for analysing lithium-ion battery charging experiments using the **Δt(Q)** methodology.
 
-This repository contains scripts and documentation for analysing battery charging behaviour using experimental data exported from NGU201.
+This repository provides scripts and documentation for analysing battery charging behaviour using experimental data exported from **Rohde & Schwarz NGU201** battery testing systems.
 
 ---
 
-# Project Overview
+# Research Goal
 
-The goal of this repository is to provide a structured workflow for analysing lithium-ion battery charging experiments.
+The goal of this project is to analyse lithium-ion battery charging behaviour using **state-equivalent criteria** rather than simple voltage-based comparisons.
 
-The analysis focuses on comparing charging behaviour using **Δt(Q)** curves.
+The analysis focuses on the **Δt(Q) method**, which compares the time required to reach the same transferred charge under different charging conditions.
 
-Key objectives:
-
-- analyse battery charging data
-- compare charging conditions
-- evaluate state-equivalent charging time
-- generate reproducible research plots
+This approach allows a consistent comparison of charging processes when analysing experimental battery data.
 
 ---
 
@@ -30,6 +25,24 @@ flowchart LR
     C --> D[Delta tQ Analysis]
     D --> E[Charging Behaviour Comparison]
     E --> F[Visualization]
+```
+
+---
+
+# Methodological Background
+
+Traditional charging comparisons often rely on voltage thresholds such as the time required to reach a specific voltage.
+
+In this project, charging behaviour is analysed using **state-equivalent charge criteria**.
+
+The Δt(Q) method compares charging curves by analysing the time difference required to reach identical transferred charge values.
+
+This provides a more robust basis for comparing charging behaviour under different charging conditions.
+
+Additional methodological notes can be found in:
+
+```
+docs/method_notes.md
 ```
 
 ---
@@ -63,17 +76,17 @@ battery-charging-analysis/
 
 # Script
 
-### plot_delta_tq.py
+### `plot_delta_tq.py`
 
 Research-oriented analysis script for Δt(Q) comparison of lithium-ion battery charging experiments.
 
-Main functions:
+Main functionality:
 
 - read NGU201 CSV files
-- identify DC reference condition
-- compute Δt(Q)
-- calculate AΔt up to SOC = 80%
-- generate comparison plots
+- automatically identify DC reference condition
+- compute Δt(Q) curves
+- compute AΔt up to SOC = 80%
+- generate comparison plots and bar charts
 
 ---
 
@@ -97,7 +110,7 @@ Run the script:
 python scripts/plot_delta_tq.py
 ```
 
-Generated figures will be saved in:
+Generated figures will be saved to:
 
 ```
 results/figures/
@@ -105,8 +118,27 @@ results/figures/
 
 ---
 
+# Data Availability
+
+Example experimental data and result figures are not included in this public repository in order to protect ongoing research results.
+
+The repository provides the analysis workflow and scripts required to reproduce the analysis once appropriate data is available.
+
+---
+
+# Status
+
+This repository is under active development and currently focuses on lithium-ion battery charging experiment analysis.
+
+Future extensions may include:
+
+- automated CSV parsing improvements
+- additional charging comparison metrics
+- extended parameter extraction tools
+
+---
+
 # Author
 
-Jiaxing Lu
-
+Jiaxing Lu  
 Research on lithium-ion battery charging behaviour and experimental data analysis.
