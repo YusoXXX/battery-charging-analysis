@@ -228,7 +228,7 @@ BibTeX example:
   author = {Lu, Jiaxing},
   title = {Battery Charging Analysis},
   year = {2026},
-  url = {https://github.com/YusoXXX/battery-charging-analysis}
+  url = {https://github.com/jiaxingLu/battery-charging-analysis}
 }
 ```
 
