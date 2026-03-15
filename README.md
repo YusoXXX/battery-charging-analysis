@@ -34,6 +34,8 @@ flowchart LR
     C --> D[Delta tQ Comparison]
     D --> E[Charging Behaviour Evaluation]
 ```
+---
+
 
 ## Analysis Workflow
 
