@@ -21,6 +21,17 @@ The project is designed as a research-oriented codebase and will be expanded wit
 
 ---
 
+## Analysis Workflow
+
+```mermaid
+flowchart LR
+    A[Battery Test Data<br>NGU201 / DAS60] --> B[CSV Data Parsing]
+    B --> C[Charge Alignment]
+    C --> D[Δt(Q) Analysis]
+    D --> E[Charging Behaviour Comparison]
+    E --> F[Visualization]
+```
+
 # Methodological Background
 
 The analysis approach implemented in this repository is based on comparing charging processes using **state-equivalent criteria** rather than purely voltage-based events.
