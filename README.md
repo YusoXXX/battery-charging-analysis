@@ -210,29 +210,33 @@ Future extensions may include:
 - extended parameter extraction tools
 
 ---
+## Publication
+
+The Δt(Q) method has been formalized and published:
+
+https://doi.org/10.5281/zenodo.19112940
 
 ## Citation
 
 If you use this code or analysis workflow in academic work, please cite:
 
 ```
-Lu, Jiaxing.
-Battery Charging Analysis.
-GitHub repository.
+Lu, Jiaxing (2026).  
+Δt(Q): A Time-Resolved Criterion for State-Equivalent Comparison in Lithium-Ion Charging.  
+Zenodo. https://doi.org/10.5281/zenodo.19112940
 ```
 
 BibTeX example:
 
 ```
-@software{lu_battery_charging_analysis,
-  author = {Lu, Jiaxing},
-  title = {Battery Charging Analysis},
-  year = {2026},
-  url = {https://github.com/jiaxingLu/battery-charging-analysis}
+@misc{lu_delta_t_q_2026,
+  author       = {Lu, Jiaxing},
+  title        = {Δt(Q): A Time-Resolved Criterion for State-Equivalent Comparison in Lithium-Ion Charging},
+  year         = {2026},
+  doi          = {10.5281/zenodo.19112940},
+  url          = {https://doi.org/10.5281/zenodo.19112940}
 }
 ```
-
-A DOI may be provided in the future when the repository is archived for publication.
 
 ---
 
